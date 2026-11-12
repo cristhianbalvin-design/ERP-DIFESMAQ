@@ -1,0 +1,452 @@
+{
+  "id": "etapa2",
+  "titulo": "Etapa 2 · Crecimiento y datos reales",
+  "inicio": "2026-06-15",
+  "fin": "2026-11-11",
+  "periodos": [
+    {
+      "id": "P1",
+      "etiqueta": "15 jun – 31 jul",
+      "inicio": "2026-06-15",
+      "fin": "2026-07-31"
+    },
+    {
+      "id": "P2",
+      "etiqueta": "Agosto",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31"
+    },
+    {
+      "id": "P3",
+      "etiqueta": "Septiembre",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30"
+    },
+    {
+      "id": "P4",
+      "etiqueta": "Octubre",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31"
+    },
+    {
+      "id": "P5",
+      "etiqueta": "1 – 11 nov",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-11"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "Almacén, compras y estabilización",
+      "actividades": [
+        {
+          "id": "E2-001",
+          "texto": "WMS avanzado: lector de códigos de barras en el celular, matching de 3 vías y devoluciones a proveedor (RMA)",
+          "tipo": "ADM",
+          "periodos": [
+            "P1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-002",
+          "texto": "Compras: condición de pago en la Orden de Compra y ficha completa del proveedor guardada en base de datos",
+          "tipo": "ADM",
+          "periodos": [
+            "P1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-003",
+          "texto": "RRHH: corrección de notificaciones por WhatsApp y de la carga de marcaciones biométricas",
+          "tipo": "FIX",
+          "periodos": [
+            "P1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-004",
+          "texto": "Estabilización del Dashboard y del modo campo en la versión móvil",
+          "tipo": "FIX",
+          "periodos": [
+            "P1"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "Organigrama, RRHH, nómina y finanzas",
+      "actividades": [
+        {
+          "id": "E2-005",
+          "texto": "Organigrama v2: posiciones, cargo y ocupante, vacantes, selección múltiple y movimiento grupal",
+          "tipo": "ADM",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-006",
+          "texto": "RRHH: la cuenta de acceso se crea al asignar la posición; módulos de campo derivados del cargo; aprobación de solicitudes por el jefe del organigrama",
+          "tipo": "ADM",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-007",
+          "texto": "Asistencia: turno según la fecha de marcación, cobertura contractual por fecha y régimen laboral unificado",
+          "tipo": "ADM",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-008",
+          "texto": "Nómina: cálculo guardado por período, IR 5ta con gratificaciones, régimen minero con sueldo mensual completo, régimen mixto y sobretasa por feriado trabajado",
+          "tipo": "ADM",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-009",
+          "texto": "Facturación y CxC: emisión de factura y registro de cobros en una sola operación; importación masiva de CxC",
+          "tipo": "ADM",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-010",
+          "texto": "Operaciones: modelo DBS en Órdenes de Trabajo y contratos de alquiler con seguridad de datos",
+          "tipo": "OP",
+          "periodos": [
+            "P2"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "Documentos, compras y finanzas",
+      "actividades": [
+        {
+          "id": "E2-011",
+          "texto": "Constructor de documentos: plantillas con bloques, variables, imágenes, encabezado y pie, y vista previa",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-012",
+          "texto": "Cotización Especial y condiciones comerciales configurables por tipo de documento",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-013",
+          "texto": "Leads y cuentas de persona natural (DNI) y Tax ID para clientes extranjeros",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-014",
+          "texto": "Notas de Crédito y Débito en Facturación con trazabilidad al comprobante de origen",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-015",
+          "texto": "Cuentas por Pagar centralizadas desde todos sus orígenes; la recepción física se separa de la factura del proveedor",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-016",
+          "texto": "Detracciones SPOT en Facturación, Cuentas por Cobrar y Cuentas por Pagar",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-017",
+          "texto": "Caja Chica: aportes directos, edición y anulación segura de fondos",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-018",
+          "texto": "App de Compras en campo: el comprador registra el gasto desde el celular con su Orden de Compra de regularización",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-019",
+          "texto": "Aprobación móvil de solicitudes de RRHH para supervisores y gerencia",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-020",
+          "texto": "Bandeja de sourcing: proveedor por línea de material y una Orden de Compra por proveedor",
+          "tipo": "ADM",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-021",
+          "texto": "Roles y permisos: guardado completo en una sola operación y sin pérdidas",
+          "tipo": "FIX",
+          "periodos": [
+            "P3"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "Diagnóstico, costeo, almacén y rediseño",
+      "actividades": [
+        {
+          "id": "E2-022",
+          "texto": "Diagnóstico Técnico: hallazgos con fotos, causas probables e informe en PDF",
+          "tipo": "OP",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-023",
+          "texto": "Flujo Diagnóstico → Hoja de Costeo (asistente de mano de obra, materiales y margen) → Cotización",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-024",
+          "texto": "Centro de costo por línea de SOLPE y OC, con su reparto en Cuentas por Pagar",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-025",
+          "texto": "Rediseño moderno de Cotizaciones, OS Cliente, Cuentas y Contactos, Valorizaciones, Catálogo de servicios y Mis OTs",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-026",
+          "texto": "Contrato digital con firma electrónica para renovaciones y aviso de contratos por vencer",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-027",
+          "texto": "Acta de conformidad móvil: firma del cliente por enlace, PDF firmado y envío por correo",
+          "tipo": "OP",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-028",
+          "texto": "Cobro recurrente mensual: tarifa fija con OT y valorización automáticas",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-029",
+          "texto": "Motor de notificaciones por correo y WhatsApp (fase 1)",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-030",
+          "texto": "Almacén en Operaciones: recepción de OC, inventario y kardex, ubicaciones, reserva de repuestos por OT, conteos y gemelo digital",
+          "tipo": "OP",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-031",
+          "texto": "Aria, asistente de inteligencia artificial que consulta los datos reales del ERP y avisa de vencimientos y stock bajo",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-032",
+          "texto": "Nueva marca del sistema: OPERA by Tideo Tech & Strategy",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-033",
+          "texto": "Dashboards BI Comercial y BI Financiero con datos reales y multimoneda",
+          "tipo": "ADM",
+          "periodos": [
+            "P4"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "Flota, transporte, fabricación y cierre de etapa",
+      "actividades": [
+        {
+          "id": "E2-034",
+          "texto": "Flota y Alquileres con datos reales: panel, contratos, actas y despachos, liquidación y DMR, pasaporte, garantías y certificaciones",
+          "tipo": "OP",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-035",
+          "texto": "Transporte Comercial: monitor de viajes, hoja de ruta, maestro de rutas, lugares y flota",
+          "tipo": "OP",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-036",
+          "texto": "Órdenes de Fabricación: bandeja, creación, ficha editable con tareas, materiales y aprobación; ficha técnica en PDF",
+          "tipo": "OP",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-037",
+          "texto": "Dashboard Gerencial e Inicio operativo con datos reales",
+          "tipo": "OP",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-038",
+          "texto": "BI Operativo con datos reales y planilla al costo total en el Estado de Resultados",
+          "tipo": "ADM",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-039",
+          "texto": "Tesorería: transferencias y cambio de moneda entre cuentas propias; Caja Chica multimoneda; tipo de gasto en el Estado de Resultados",
+          "tipo": "ADM",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-040",
+          "texto": "Financiamiento y Deuda: edición y eliminación de préstamos",
+          "tipo": "ADM",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-041",
+          "texto": "Aria con voz, guía de uso de cada pantalla y acceso desde todo el sistema",
+          "tipo": "ADM",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-042",
+          "texto": "Auditoría del estado real de las 210 pantallas: catálogo verificado automáticamente contra el código",
+          "tipo": "AUDIT",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E2-043",
+          "texto": "HITO: 142 pantallas operativas con datos reales · Cierre de la Etapa 2",
+          "tipo": "HITO",
+          "periodos": [
+            "P5"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1398 @@
+{
+  "id": "etapa1",
+  "titulo": "Etapa 1 · Construcción base",
+  "inicio": "2026-05-04",
+  "fin": "2026-06-14",
+  "periodos": [
+    {
+      "id": "S1",
+      "etiqueta": "S1",
+      "inicio": "2026-05-04",
+      "fin": "2026-05-10"
+    },
+    {
+      "id": "S2",
+      "etiqueta": "S2",
+      "inicio": "2026-05-11",
+      "fin": "2026-05-17"
+    },
+    {
+      "id": "S3",
+      "etiqueta": "S3",
+      "inicio": "2026-05-18",
+      "fin": "2026-05-24"
+    },
+    {
+      "id": "S4",
+      "etiqueta": "S4",
+      "inicio": "2026-05-25",
+      "fin": "2026-05-31"
+    },
+    {
+      "id": "S5",
+      "etiqueta": "S5",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-07"
+    },
+    {
+      "id": "S6",
+      "etiqueta": "S6",
+      "inicio": "2026-06-08",
+      "fin": "2026-06-14"
+    }
+  ],
+  "secciones": [
+    {
+      "titulo": "BASE DEL SISTEMA · PLATAFORMA SaaS",
+      "actividades": [
+        {
+          "id": "E1-001",
+          "texto": "Diseño del modelo de aislamiento de datos entre empresas clientes",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-002",
+          "texto": "Alta de empresas desde panel Superadmin con creación de administrador inicial (migr. 019)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-003",
+          "texto": "Niveles de acceso: Superadmin TIDEO, Administrador de empresa, Usuario, Usuario de campo",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-004",
+          "texto": "Bypass global Superadmin en seguridad de datos — acceso a cualquier pantalla de cualquier empresa (migr. 021–022)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-005",
+          "texto": "Pantalla Empresas / Tenants con métricas operativas reales desde base de datos",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "CRM Y MÓDULOS COMERCIALES",
+      "actividades": [
+        {
+          "id": "E1-006",
+          "texto": "Hoja de Costeo: borrador → revisión → aprobada → cotización pre-rellenada con versionado (migr. 020, 023)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-007",
+          "texto": "Agenda Comercial: vistas mes/semana/día/lista; evento realizado genera Actividad automática vinculada al cliente (migr. 016)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-008",
+          "texto": "Actividades Comerciales: tablero Kanban con persistencia de estado (migr. 017)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-009",
+          "texto": "Pipeline: historial completo por oportunidad con navegación directa a agenda, actividades, hoja de costeo",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-010",
+          "texto": "Hardening de seguridad en todas las tablas CRM + Comercial (migr. 018)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "FINANZAS Y OPERACIONES BASE",
+      "actividades": [
+        {
+          "id": "E1-011",
+          "texto": "Flujo de cliente definido: Lead → Cuenta → Contacto → Oportunidad (Lead siempre primero)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-012",
+          "texto": "Formulario de Lead con RUC, Razón Social e Industria; Proveedores con ciclo de vida (Potencial → Homologado → Bloqueado)",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-013",
+          "texto": "Módulo Financiamiento y Deuda: amortización automática, intereses al Estado de Resultados, reporte de deuda a 12 meses",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-014",
+          "texto": "Nómina Básica base: AFP/ONP, IR 5ta, cargas empresa, boleta PDF, cierre de período con egreso en finanzas",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-015",
+          "texto": "Wiring de 13 rutas del sistema: BI Financiero, Dashboard, CS 360°, RRHH Admin, Planner, IA, Presupuesto vs Real, Tickets",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-016",
+          "texto": "BI Comercial, BI Operativo y BI Financiero completos",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-017",
+          "texto": "Customer Success completo: Onboarding, Planes de Éxito, Health Score, Renovaciones, NPS",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-018",
+          "texto": "Inteligencia Artificial: IA Comercial, IA Operativa e IA Financiera con historial auditado",
+          "tipo": "ADM",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-019",
+          "texto": "HITO: Sistema base vivo con 13 rutas activas, CRM y finanzas operativos",
+          "tipo": "HITO",
+          "periodos": [
+            "S1"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "ROLES, PERMISOS Y SEGURIDAD",
+      "actividades": [
+        {
+          "id": "E1-020",
+          "texto": "Campo es_plataforma en tabla empresas para identificar al tenant dueño de la plataforma (migr. 062–066)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-021",
+          "texto": "Log de auditoría de accesos cruzados entre empresas — registro permanente append-only",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-022",
+          "texto": "Jerarquía de roles: dirección ve todo el tenant, jefatura ve su equipo, operativo ve solo lo propio (migr. 069)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-023",
+          "texto": "UI de Roles: nuevos campos de categoría y nivel jerárquico. UI de Usuarios: jefe directo asignable",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-024",
+          "texto": "Asignaciones funcionales multirol: una persona en dos áreas simultáneamente (migr. 070)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "CRM CON PERSISTENCIA REAL",
+      "actividades": [
+        {
+          "id": "E1-025",
+          "texto": "Historial de estados de leads guardado permanentemente en base de datos (migr. 077–079)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-026",
+          "texto": "Historial de movimientos entre etapas del pipeline guardado como registro permanente",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-027",
+          "texto": "Campañas de Marketing: crear/pausar/reactivar con métricas CPL, ROI, ingresos atribuidos (migr. 068)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-028",
+          "texto": "Eliminación de leads con limpieza de datos relacionados en una sola operación (migr. 072–076)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-029",
+          "texto": "Responsable comercial propagado correctamente al convertir lead en cuenta y oportunidad",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-030",
+          "texto": "Panels laterales \"Nueva oportunidad\" y \"Nuevo evento\" correctamente conectados a base de datos",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "INTEGRACIONES Y RRHH BASE",
+      "actividades": [
+        {
+          "id": "E1-031",
+          "texto": "Módulo API Keys: claves únicas de integración por empresa con permisos por módulo y acción (migr. 067)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-032",
+          "texto": "Función serverless que valida la clave e inserta leads desde sistemas externos (formularios web)",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-033",
+          "texto": "Módulo Turnos y Horarios completamente conectado: crear/editar/eliminar, horas efectivas en tiempo real, cruza medianoche",
+          "tipo": "ADM",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-034",
+          "texto": "Corrección: import default vs named en rrhhService.js",
+          "tipo": "FIX",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-035",
+          "texto": "Corrección: pages_turnos.jsx correctamente importado en App.jsx, duplicación eliminada",
+          "tipo": "FIX",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-036",
+          "texto": "HITO: CRM con datos reales, roles por jerarquía y módulo de integraciones operativo",
+          "tipo": "HITO",
+          "periodos": [
+            "S2"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "MOTOR DE NÓMINA PERÚ",
+      "actividades": [
+        {
+          "id": "E1-037",
+          "texto": "AFP: aporte 10% + comisión por flujo % + prima de seguro sobre tope RAM — tres componentes separados",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-038",
+          "texto": "IR 5ta categoría con UIT configurable por empresa y proyección anual real",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-039",
+          "texto": "Horas extra: primeras 2 horas del día al 25%, desde la 3ra hora al 35%",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-040",
+          "texto": "CTS sobre remuneración computable; gratificación y bonificación extraordinaria 9%",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-041",
+          "texto": "Régimen MYPE: microempresa sin CTS ni gratificación (vacaciones 15 días); pequeña empresa con ambas",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-042",
+          "texto": "Régimen Minero: ciclos 14+7, 20+10, 28+14; remuneración proporcional; bonificación por altitud (migr. 150)",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-043",
+          "texto": "Pago quincenal configurable: 1ra quincena sin retenciones; 2da quincena con IR completo y cargas sociales",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-044",
+          "texto": "Reporte PLAME descargable en Excel por cada período cerrado",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-045",
+          "texto": "Pantalla de configuración de nómina: régimen, frecuencia de pago, UIT, RMV, RAM, AFP por empresa",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "RRHH CORE: EVALUACIÓN, CESE Y TAREO",
+      "actividades": [
+        {
+          "id": "E1-046",
+          "texto": "Evaluación de Desempeño 360°: plantillas configurables, autoevaluación, evaluación del jefe, scores ponderados (migr. 151)",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-047",
+          "texto": "Resultados individuales y consolidados de evaluaciones con exportación a Excel",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-048",
+          "texto": "Liquidación por Cese: todos los tipos de cese, cálculo automático de conceptos, genera CxP automática (migr. 152)",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-049",
+          "texto": "Personal administrativo puede participar en OT y registrar horas en Parte Diario sin pasar por Planner (migr. 147)",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-050",
+          "texto": "Tareo Administrativo: registro de horas contra OT o CECO libre, en backoffice y PWA (migr. 148)",
+          "tipo": "ADM",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-051",
+          "texto": "HITO: Motor de nómina laboral peruana completo y módulos de cese operativos",
+          "tipo": "HITO",
+          "periodos": [
+            "S3"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "COMPRAS DE EXTREMO A EXTREMO",
+      "actividades": [
+        {
+          "id": "E1-052",
+          "texto": "Proveedores: ficha completa con ciclo de vida y homologación; solo homologados reciben Órdenes de Compra",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-053",
+          "texto": "Cotizaciones de Compra: asistente de 3 pasos y cuadro comparativo de proveedores",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-054",
+          "texto": "Órdenes de Compra: seguimiento por estados, lead time, origen SOLPE, alertas de vencimiento (migr. 215–221)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-055",
+          "texto": "Órdenes de Servicio Interna: para servicios tercerizados con conformidad como cierre",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-056",
+          "texto": "Recepciones: verificación ítem por ítem, matching 3 vías, precio histórico; genera CxP + evaluación de proveedor",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-057",
+          "texto": "Devoluciones a Proveedor: flujo completo crear/enviar/aceptar con nota de crédito (migr. 232)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-058",
+          "texto": "Compras en Campo / Gastos: extracción IA del comprobante, validación de CECO obligatoria",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "INVENTARIO, TRANSPORTE Y FINANZAS AVANZADAS",
+      "actividades": [
+        {
+          "id": "E1-059",
+          "texto": "Inventario y Kardex: tres estados de valuación C1 (nuevo), C2 (recuperado), C3 (dañado) (migr. 214)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-060",
+          "texto": "SOLPE Interna: items trazados hasta la OC, stock de seguridad con SOLPE automática (migr. 234–236)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-061",
+          "texto": "Transporte y Guías de Remisión: 9 tablas nuevas, correlativo SUNAT T001-XXXXXXXX, validación campos obligatorios (migr. 211)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-062",
+          "texto": "Al confirmar entrega actualiza inventario automáticamente; al anular revierte el movimiento",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-063",
+          "texto": "Órdenes de Venta: cálculo IGV 18%, reserva/liberación de stock, catálogo vinculado a materiales",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-064",
+          "texto": "PDF Guía de Remisión con todos los campos SUNAT (sección OSE_FUTURE reservada)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-065",
+          "texto": "Tarifa hora por colaborador: sueldo mensual ÷ horas base; usada en OTs, partes, tareos y Control de Horas (migr. 170)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-066",
+          "texto": "Activos Fijos: maestro de activos con trazabilidad desde la compra que los originó (migr. 212)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-067",
+          "texto": "Notificaciones internas para vencimiento de documentos (migr. 213)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-068",
+          "texto": "CxP con campos para honorarios 4ta categoría, tipo de cambio, moneda original, OT vinculada, categoría ER (migr. 166–169)",
+          "tipo": "ADM",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-069",
+          "texto": "Corrección: sincronización OV ↔ Guía en confirmarEntrega() y anularGuia()",
+          "tipo": "FIX",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-070",
+          "texto": "Corrección: eliminación de RecepcionesLegacy (código muerto en pages_ops.jsx)",
+          "tipo": "FIX",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-071",
+          "texto": "Corrección: registrarEntradaDesdeRecepcion agrega codigo y material_id al mapeo de items",
+          "tipo": "FIX",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "ERP OPERATIVO · INVESTIGACIÓN Y FASE 1 (13 pantallas)",
+      "actividades": [
+        {
+          "id": "E1-072",
+          "texto": "Investigación: levantamiento del flujo operativo de DIFESMAQ en minería subterránea con equipos LHD Caterpillar",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-073",
+          "texto": "Investigación: mapeo del ciclo completo desde la falla del equipo hasta el cierre y la liquidación al contrato",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-074",
+          "texto": "Investigación: modelo DBS (Tipo de Trabajo × Cargo Financiero) e indicadores de confiabilidad DMR, MTBF, MTTR, OEE",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-075",
+          "texto": "Fase 1: Dashboard Gerencial Operativo con KPIs en tiempo real, alertas e indicadores de flota",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-076",
+          "texto": "Fase 1: Mis OTs del Día — vista mobile-first diferenciada por rol (técnico, supervisor, gerencia)",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-077",
+          "texto": "Fase 1: Panel de Flota y Contratos de Alquiler",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-078",
+          "texto": "Fase 1: Bandeja Maestra de OTs y Creación de OT con modelo DBS y herencia automática de Centro de Costo",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-079",
+          "texto": "Fase 1: Partes de Taller y Cierre con liquidación automática al contrato",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-080",
+          "texto": "Fase 1: Backlog Operativo y Programación de Mantenimiento Preventivo con semáforo de vencimiento",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "reprogramado",
+          "nota": "Programación PM pendiente de datos reales; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-081",
+          "texto": "Fase 1: KPIs de Confiabilidad (DMR, MTBF, MTTR, Maintenance Ratio) y Disponibilidad Mecánica vs Meta contractual",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "reprogramado",
+          "nota": "KPIs de Confiabilidad y Disponibilidad Mecánica aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-082",
+          "texto": "Fase 1: Reportes de Campo mobile-first para técnicos en operación minera",
+          "tipo": "OP",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-083",
+          "texto": "HITO: Ciclo de compras E2E completo + 13 pantallas del ERP Operativo construidas",
+          "tipo": "HITO",
+          "periodos": [
+            "S4"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "RRHH OLAS 2–5 · BIOMÉTRICO · GEOCERCAS",
+      "actividades": [
+        {
+          "id": "E1-084",
+          "texto": "RRHH Ola 2: datos bancarios, bloqueo de acceso al cese, contratos con tipo y duración, falta grave documentada",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-085",
+          "texto": "RRHH Ola 2: autorización de horas extra, compensaciones y descuentos extraordinarios",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-086",
+          "texto": "RRHH Ola 3: registro de amonestaciones con notificación y acuse del colaborador",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-087",
+          "texto": "RRHH Ola 3: papeletas de movimiento integradas en Solicitudes de RRHH",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-088",
+          "texto": "RRHH Ola 4: asistencia para personal honorarios; Roster Minero con snapshots por ciclo y cierre",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-089",
+          "texto": "RRHH Ola 5: Reclutamiento — vacantes, candidatos, candidaturas con historial, postulación pública por token",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-090",
+          "texto": "RRHH Ola 5: Mi Portal — ficha propia, documentos, solicitudes, boletas con acuse, constancias y amonestaciones",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-091",
+          "texto": "Control de Asistencia: integración biométrica, carga y anulación de lotes de marcación (migr. 237)",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-092",
+          "texto": "Geocercas: zonas geográficas por colaborador con validación GPS al registrar asistencia",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-093",
+          "texto": "Alerta SAR automática cuando un colaborador no registra entrada dentro del turno asignado",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-094",
+          "texto": "Notificaciones vía WhatsApp para colaboradores con número y consentimiento registrado",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-095",
+          "texto": "Historial de asignaciones de jornada con vigencia; soporte de suspensión perfecta como tramo diferenciado (migr. 206)",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "APP MÓVIL DE CAMPO",
+      "actividades": [
+        {
+          "id": "E1-096",
+          "texto": "App móvil — Técnico: OTs del día → GPS → parte diario en 4 pasos → fotos → avance → restricciones",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-097",
+          "texto": "App móvil — Comprador: foto de comprobante → extracción por IA → vincular a OT → pendiente revisión",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-098",
+          "texto": "App móvil — Supervisor: aprobar partes → mapa de OTs con semáforo de cumplimiento SLA",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-099",
+          "texto": "App móvil — Administrativo: registro del día con OTs asignadas y actividades libres por Centro de Costo",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-100",
+          "texto": "App móvil — Checklist de seguridad SSOMA y escáner de código de barras",
+          "tipo": "ADM",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "ERP OPERATIVO · FASES 2–4 (22 pantallas)",
+      "actividades": [
+        {
+          "id": "E1-101",
+          "texto": "Fase 2: Actas y Despachos de equipos con OT de movilización vinculada",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-102",
+          "texto": "Fase 2: Pasaporte de Equipos — historial completo de componentes instalados y retirados por equipo",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-103",
+          "texto": "Fase 2: Gestión de Garantías — ciclo de vida de reclamaciones al fabricante",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-104",
+          "texto": "Fase 2: Certificaciones del Activo — SOAT, pólizas, habilitaciones con semáforo de vencimiento",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-105",
+          "texto": "Fase 2: Catálogo de Repuestos con estados C1/C2/C3 y costo aterrizado (FOB + flete + arancel + IGV)",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-106",
+          "texto": "Fase 2: Cotizaciones y Órdenes de Venta de repuestos",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "Cotizaciones y Órdenes de Venta de repuestos aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-107",
+          "texto": "Fase 3: Análisis SOS de aceite — muestra → resultado de laboratorio → generación automática de backlog",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "Análisis SOS aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-108",
+          "texto": "Fase 3: KPIs automáticos de Confiabilidad: MTBF, MTTR, DMR y Maintenance Ratio",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "KPIs de Confiabilidad aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-109",
+          "texto": "Fase 3: Liquidación mensual y Disponibilidad Mecánica real vs meta contractual con penalidades",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "Disponibilidad Mecánica vs meta aún en maqueta (la Liquidación ya es real); se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-110",
+          "texto": "Fase 4: Órdenes de Fabricación con planificación en grilla de 15 días y detección de cuellos de botella",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "Planificación de OF aún en maqueta (las Órdenes de Fabricación ya son reales); se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-111",
+          "texto": "Fase 4: Control de Producción por área: Maestranza, Soldadura, Fabricación y Ensamble",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "Control de Producción por área aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-112",
+          "texto": "Fase 4: OEE y Rendimiento: Disponibilidad × Rendimiento × Calidad",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "OEE y Rendimiento aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-113",
+          "texto": "Fase 4: No Conformidades con bloqueo de liberación, Control de Calidad y Trazabilidad completa de la Orden de Fabricación",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "No Conformidades, Calidad y Trazabilidad aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-114",
+          "texto": "Fase 4: Listas de Materiales (BOM) y tiempos estándar por proceso productivo (catálogo MTM)",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "reprogramado",
+          "nota": "BOM y tiempos estándar aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-115",
+          "texto": "Fase 4: Supply Chain — Inventario y Kardex operativo, SOLPE, Compras e Importación",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-116",
+          "texto": "Fase 4: Transporte Comercial — Monitor de Viajes, Hoja de Ruta, Maestro de Rutas y Tarifas por zona",
+          "tipo": "OP",
+          "periodos": [
+            "S5"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "NÓMINA FASES 2–3 · CONTRATOS DIGITALES",
+      "actividades": [
+        {
+          "id": "E1-117",
+          "texto": "Nómina Fase 2: historial de asignaciones de jornada — cálculo correcto por tramos dentro de un mismo período",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-118",
+          "texto": "Nómina Fase 3: afp_parametros multitenant — comisiones flujo/mixta configurables por AFP y empresa (migr. 208)",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-119",
+          "texto": "Motor de nómina corregido: días esperados por tramo, asistencias nunca superan días esperados del período",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-120",
+          "texto": "Motor de nómina: régimen Mixto (ej. Minero → General) con etiqueta explícita y cálculo por tramos separados",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-121",
+          "texto": "Contratos digitales: obligatorio antes de activar al trabajador; firma desde móvil con código OTP de verificación",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-122",
+          "texto": "Motor de adendas: al modificar cargo o sueldo, el sistema exige subir la adenda vinculada al contrato original",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-123",
+          "texto": "Versionado de contratos: cada adenda genera un snapshot histórico permanente — contrato como fuente única (migr. 238–248)",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-124",
+          "texto": "Carga masiva de personal operativo y administrativo desde plantilla Excel con validación previa de datos",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-125",
+          "texto": "Compras avanzado: seguimiento de OC en tránsito y valorización GRNI (mercadería recibida pendiente de factura)",
+          "tipo": "ADM",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-126",
+          "texto": "Corrección: personalDocumentosService.js — documentos con estado pendiente de validación ahora visibles correctamente",
+          "tipo": "FIX",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-127",
+          "texto": "Corrección: afp_parametros_comisiones (migr. 209) y fix join tipo_documento (migr. 210)",
+          "tipo": "FIX",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    },
+    {
+      "titulo": "ERP OPERATIVO · FASE 5: CAMPO, TRANSPORTE Y HSE (9 pantallas)",
+      "actividades": [
+        {
+          "id": "E1-128",
+          "texto": "Fase 5: Mapa de Campo con ubicación de equipos y órdenes (GPS simulado — real en siguiente fase)",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "reprogramado",
+          "nota": "Mapa de Campo aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-129",
+          "texto": "Fase 5: Monitor de Viajes, Hoja de Ruta (asistente 4 pasos), Maestro de Rutas y Tarifas",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-130",
+          "texto": "Fase 5: Scheduler y Despacho — asignación de trabajos por habilidad y zona geográfica",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-131",
+          "texto": "Fase 5: Guías y Despachos de repuestos integrados al flujo completo de venta",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-132",
+          "texto": "Fase 5 HSE: Dashboard HSE y Permisos de Trabajo en Alto Riesgo (PETAR)",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "reprogramado",
+          "nota": "Dashboard HSE y Permisos de Trabajo aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-133",
+          "texto": "Fase 5 HSE: Registro de Incidentes según normativa DS 024-2016-EM",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "reprogramado",
+          "nota": "Registro de Incidentes aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-134",
+          "texto": "Fase 5 HSE: EPP y Certificaciones del personal con semáforo de vencimiento",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "reprogramado",
+          "nota": "EPP y Certificaciones aún en maqueta; se completa en la Etapa 3."
+        },
+        {
+          "id": "E1-135",
+          "texto": "Fase 5 HSE: Análisis de Trabajo Seguro (ATS) y Protocolo de Bloqueo y Etiquetado (LOTO)",
+          "tipo": "OP",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "reprogramado",
+          "nota": "ATS y LOTO aún en maqueta; se completa en la Etapa 3."
+        }
+      ]
+    },
+    {
+      "titulo": "AUDITORÍAS TÉCNICAS Y VALIDACIÓN INICIAL CON USUARIOS",
+      "actividades": [
+        {
+          "id": "E1-136",
+          "texto": "Auditoría técnica 14/06: cruce de pages_*.jsx, context.jsx, services/*.js y supabase/migrations → 242 migraciones confirmadas",
+          "tipo": "AUDIT",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-137",
+          "texto": "Auditoría técnica 16/06: corte final a 253 migraciones, identificación de implementaciones no documentadas previamente",
+          "tipo": "AUDIT",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-138",
+          "texto": "Validación inicial de pantallas del ERP Administrativo con usuarios de DIFESMAQ (CRM, RRHH, Compras, Logística, Almacén, Finanzas)",
+          "tipo": "AUDIT",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        },
+        {
+          "id": "E1-139",
+          "texto": "HITO: Cierre de la Etapa 1 · ~74 módulos ERP Administrativo y 48 pantallas ERP Operativo construidas (16 actividades reprogramadas a la Etapa 3) · Validación inicial realizada",
+          "tipo": "HITO",
+          "periodos": [
+            "S6"
+          ],
+          "estado": "terminado"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "titulo": "Capacitación DIFESMAQ",
+  "dias": [
+    "miércoles",
+    "viernes",
+    "sábado"
+  ],
+  "duracion_sugerida": "2 horas por sesión",
+  "horario": "Por confirmar con DIFESMAQ",
+  "nota": "Las fechas son una propuesta de TIDEO y dependen de la disponibilidad de DIFESMAQ. No hay sesiones los feriados del 8 y 25 de diciembre ni el 1 de enero.",
+  "estados": {
+    "programada": "Propuesta, por confirmar",
+    "confirmada": "Confirmada por DIFESMAQ",
+    "realizada": "Realizada",
+    "reprogramada": "Reprogramada a pedido del cliente"
+  },
+  "sesiones": [
+    {
+      "id": "C01",
+      "fecha": "2026-11-18",
+      "dia": "miércoles",
+      "titulo": "Arranque: acceso, roles y navegación",
+      "area": "Plataforma",
+      "temas": [
+        "Ingreso al sistema y cambio de contraseña",
+        "Usuarios, roles y permisos por área",
+        "Organigrama, cargos y posiciones",
+        "Pantalla de inicio, menú y uso de Aria"
+      ],
+      "preparacion_cliente": [
+        "Lista de usuarios con cargo y área",
+        "Organigrama vigente"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C02",
+      "fecha": "2026-11-20",
+      "dia": "viernes",
+      "titulo": "RRHH I: personal, contratos y asistencia",
+      "area": "RRHH",
+      "temas": [
+        "Personal operativo y administrativo",
+        "Contratos digitales y adendas con firma",
+        "Turnos y horarios",
+        "Control de asistencia: biométrico, geocercas y alertas"
+      ],
+      "preparacion_cliente": [
+        "Carga del personal (ficha laboral, régimen y AFP)",
+        "Turnos reales de la empresa"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C03",
+      "fecha": "2026-11-21",
+      "dia": "sábado",
+      "titulo": "RRHH II: nómina y autoservicio",
+      "area": "RRHH",
+      "temas": [
+        "Nómina general y régimen minero (roster y ciclos)",
+        "Solicitudes: vacaciones, permisos y papeletas",
+        "Tareo administrativo",
+        "Mi portal y app móvil del colaborador"
+      ],
+      "preparacion_cliente": [
+        "Parámetros de nómina: UIT, RMV y AFP",
+        "Datos bancarios de los colaboradores"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C04",
+      "fecha": "2026-11-25",
+      "dia": "miércoles",
+      "titulo": "RRHH III: préstamos, comisiones y ciclo del colaborador",
+      "area": "RRHH",
+      "temas": [
+        "Préstamos al personal",
+        "Comisiones",
+        "Liquidación por cese",
+        "Evaluación de desempeño y reclutamiento"
+      ],
+      "preparacion_cliente": [
+        "Un caso real de cese para la práctica"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C05",
+      "fecha": "2026-11-27",
+      "dia": "viernes",
+      "titulo": "Comercial I: CRM",
+      "area": "Comercial",
+      "temas": [
+        "Leads y scoring",
+        "Cuentas y contactos",
+        "Pipeline de oportunidades",
+        "Agenda, actividades y campañas de marketing"
+      ],
+      "preparacion_cliente": [
+        "Carga de clientes y contactos existentes",
+        "Etapas del proceso comercial propio"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C06",
+      "fecha": "2026-11-28",
+      "dia": "sábado",
+      "titulo": "Comercial II: costeo, cotización y servicio",
+      "area": "Comercial",
+      "temas": [
+        "Hoja de Costeo",
+        "Cotizaciones estándar y especiales",
+        "OS Cliente y valorizaciones",
+        "Equipos de clientes y panel de producción"
+      ],
+      "preparacion_cliente": [
+        "Catálogo de servicios y tarifarios"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C07",
+      "fecha": "2026-12-02",
+      "dia": "miércoles",
+      "titulo": "Compras",
+      "area": "Compras",
+      "temas": [
+        "Proveedores y homologación",
+        "SOLPE y bandeja de sourcing",
+        "Cotizaciones y Órdenes de Compra y de Servicio",
+        "Recepciones y compras en campo con el celular"
+      ],
+      "preparacion_cliente": [
+        "Carga y homologación de proveedores"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C08",
+      "fecha": "2026-12-04",
+      "dia": "viernes",
+      "titulo": "Almacén y logística",
+      "area": "Logística",
+      "temas": [
+        "Almacenes, inventario y kardex",
+        "Ubicaciones, reservas por OT y despachos",
+        "Conteos cíclicos, vencimientos y gemelo digital",
+        "Transporte y guías de remisión"
+      ],
+      "preparacion_cliente": [
+        "Almacenes reales y stock inicial"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C09",
+      "fecha": "2026-12-05",
+      "dia": "sábado",
+      "titulo": "Finanzas I: ventas, facturación electrónica y cobranza",
+      "area": "Finanzas",
+      "temas": [
+        "Ventas y pre-facturación",
+        "Facturación electrónica SUNAT, notas de crédito y débito",
+        "Cuentas por Cobrar",
+        "Detracciones"
+      ],
+      "preparacion_cliente": [
+        "Series de comprobantes",
+        "Certificado digital y credenciales OSE/PSE (pase a producción SUNAT)"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D3"
+    },
+    {
+      "id": "C10",
+      "fecha": "2026-12-09",
+      "dia": "miércoles",
+      "titulo": "Finanzas II: pagos y tesorería",
+      "area": "Finanzas",
+      "temas": [
+        "Cuentas por Pagar",
+        "Tesorería, conciliación y transferencias",
+        "Caja Chica",
+        "Financiamiento y deuda"
+      ],
+      "preparacion_cliente": [
+        "Cuentas bancarias de la empresa y saldos iniciales"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C11",
+      "fecha": "2026-12-11",
+      "dia": "viernes",
+      "titulo": "Finanzas III: resultados y control de gestión",
+      "area": "Finanzas",
+      "temas": [
+        "Estado de Resultados",
+        "Presupuesto vs Real",
+        "Activos fijos",
+        "Dashboards BI (general, comercial, operativo y financiero)"
+      ],
+      "preparacion_cliente": [
+        "Plan de cuentas, categorías del ER y presupuesto anual"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C12",
+      "fecha": "2026-12-12",
+      "dia": "sábado",
+      "titulo": "Operaciones I: del ingreso del equipo al cierre de la OT",
+      "area": "Operaciones",
+      "temas": [
+        "Recepción de activos",
+        "Diagnóstico técnico",
+        "Bandeja de OTs y nueva OT",
+        "Partes de taller y de mina; cierre y conformidad"
+      ],
+      "preparacion_cliente": [
+        "Tipos de trabajo y centros de costo"
+      ],
+      "estado": "programada"
+    },
+    {
+      "id": "C13",
+      "fecha": "2026-12-16",
+      "dia": "miércoles",
+      "titulo": "Operaciones II: planificación y confiabilidad",
+      "area": "Operaciones",
+      "temas": [
+        "Planner de recursos y backlog",
+        "KPIs de confiabilidad (MTBF, MTTR, DMR)",
+        "Disponibilidad mecánica vs meta",
+        "Programación de mantenimiento preventivo y análisis SOS"
+      ],
+      "preparacion_cliente": [
+        "Plan de mantenimiento preventivo inicial",
+        "Metas de disponibilidad por contrato"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D1"
+    },
+    {
+      "id": "C14",
+      "fecha": "2026-12-18",
+      "dia": "viernes",
+      "titulo": "Flota y alquileres",
+      "area": "Operaciones",
+      "temas": [
+        "Panel de flota y contratos de alquiler",
+        "Actas y despachos",
+        "Liquidación y DMR",
+        "Pasaporte, garantías, certificaciones y monitoreo"
+      ],
+      "preparacion_cliente": [
+        "Maestro de equipos (modelos, series y horómetros)",
+        "Contratos de alquiler vigentes"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D3"
+    },
+    {
+      "id": "C15",
+      "fecha": "2026-12-19",
+      "dia": "sábado",
+      "titulo": "Producción I: Órdenes de Fabricación",
+      "area": "Producción",
+      "temas": [
+        "Órdenes de Fabricación y planificación",
+        "Control de producción",
+        "Calidad, no conformidades y OEE",
+        "Tiempos estándar y trazabilidad"
+      ],
+      "preparacion_cliente": [
+        "Áreas productivas y centros de trabajo"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D2"
+    },
+    {
+      "id": "C16",
+      "fecha": "2026-12-23",
+      "dia": "miércoles",
+      "titulo": "Producción II: áreas productivas",
+      "area": "Producción",
+      "temas": [
+        "Ingeniería: planos, BOM y estimación de tiempos",
+        "Maestranza",
+        "Soldadura",
+        "Fabricación y ensamble"
+      ],
+      "preparacion_cliente": [
+        "Listas de materiales de los principales procesos"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D3"
+    },
+    {
+      "id": "C17",
+      "fecha": "2026-12-26",
+      "dia": "sábado",
+      "titulo": "HSE: seguridad y salud en el trabajo",
+      "area": "HSE",
+      "temas": [
+        "Permisos de trabajo (PETAR)",
+        "Análisis de trabajo seguro (ATS) y LOTO",
+        "Registro de incidentes",
+        "EPP y certificaciones del personal"
+      ],
+      "preparacion_cliente": [
+        "Plantillas PETAR y ATS de la operación",
+        "Protocolos HSE propios"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D2"
+    },
+    {
+      "id": "C18",
+      "fecha": "2026-12-30",
+      "dia": "miércoles",
+      "titulo": "Repuestos y transporte comercial",
+      "area": "Operaciones",
+      "temas": [
+        "Catálogo y precios de repuestos",
+        "Cotizaciones, pedidos y órdenes de venta",
+        "Despachos de repuestos",
+        "Transporte comercial: viajes, hoja de ruta, rutas y tarifas"
+      ],
+      "preparacion_cliente": [
+        "Catálogo de repuestos con costos",
+        "Rutas y tarifas por zona"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D3"
+    },
+    {
+      "id": "C19",
+      "fecha": "2027-01-02",
+      "dia": "sábado",
+      "titulo": "Campo y móvil",
+      "area": "Operaciones",
+      "temas": [
+        "App móvil por perfil: técnico, supervisor, comprador, logística y gerencia",
+        "Mapa de campo",
+        "Reportes desde la mina",
+        "Mis OTs del día"
+      ],
+      "preparacion_cliente": [
+        "Celulares del personal de campo con acceso"
+      ],
+      "estado": "programada",
+      "requiere_desarrollo": "D1"
+    },
+    {
+      "id": "C20",
+      "fecha": "2027-01-06",
+      "dia": "miércoles",
+      "titulo": "Integración y cierre",
+      "area": "Todos",
+      "temas": [
+        "Flujo completo: Backlog → OT → Parte → Cierre → Liquidación → Valorización → Factura electrónica",
+        "Consultas a Aria",
+        "Revisión de dudas pendientes",
+        "Entrega del manual de usuario"
+      ],
+      "preparacion_cliente": [
+        "Participación de los responsables de cada área"
+      ],
+      "estado": "programada"
+    }
+  ]
+}
