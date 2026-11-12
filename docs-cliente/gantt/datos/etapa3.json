@@ -1,0 +1,284 @@
+{
+  "id": "etapa3",
+  "titulo": "Etapa 3 · Cierre del desarrollo",
+  "inicio": "2026-11-12",
+  "fin": "2026-11-27",
+  "periodos": [
+    {
+      "id": "D1",
+      "etiqueta": "12 – 14 nov",
+      "inicio": "2026-11-12",
+      "fin": "2026-11-14"
+    },
+    {
+      "id": "D2",
+      "etiqueta": "16 – 21 nov",
+      "inicio": "2026-11-16",
+      "fin": "2026-11-21"
+    },
+    {
+      "id": "D3",
+      "etiqueta": "23 – 27 nov",
+      "inicio": "2026-11-23",
+      "fin": "2026-11-27"
+    }
+  ],
+  "excluir_del_alcance": [
+    "admin/metricas_saas",
+    "admin/planes"
+  ],
+  "nota_excluidas": "Métricas SaaS y Planes y Licencias son pantallas internas de TIDEO y no forman parte del alcance de DIFESMAQ.",
+  "secciones": [
+    {
+      "titulo": "Confiabilidad y mantenimiento",
+      "periodo": "D1",
+      "pantallas_catalogo": [
+        "operaciones/confiabilidad",
+        "operaciones/disponibilidad-mecanica",
+        "operaciones/programacion-pm",
+        "operaciones/sos-telemetria",
+        "operaciones/indicadores-confiabilidad"
+      ]
+    },
+    {
+      "titulo": "Órdenes de Trabajo y campo",
+      "periodo": "D1",
+      "pantallas_catalogo": [
+        "operaciones/ot-detalle",
+        "operaciones/docs",
+        "operaciones/mapa-campo"
+      ]
+    },
+    {
+      "titulo": "Clientes, activos y configuración",
+      "periodo": "D1",
+      "pantallas_catalogo": [
+        "operaciones/clientes",
+        "operaciones/equipos",
+        "operaciones/configuracion",
+        "admin/tarifarios"
+      ]
+    },
+    {
+      "titulo": "Hito D1",
+      "periodo": "D1",
+      "actividades": [
+        {
+          "id": "E3-M01",
+          "texto": "HITO: Confiabilidad, Órdenes de Trabajo y configuración operativa con datos reales",
+          "tipo": "HITO",
+          "periodos": [
+            "D1"
+          ],
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "titulo": "Producción · núcleo de las Órdenes de Fabricación",
+      "periodo": "D2",
+      "pantallas_catalogo": [
+        "operaciones/dashboard-produccion",
+        "operaciones/of-planificacion",
+        "operaciones/maestranza-piso",
+        "operaciones/of-calidad",
+        "operaciones/of-no-conformidades",
+        "operaciones/of-oee",
+        "operaciones/of-tiempos-mtm",
+        "operaciones/of-trazabilidad",
+        "operaciones/of-informes",
+        "operaciones/produccion-garantias",
+        "operaciones/produccion-ingenieria",
+        "operaciones/produccion-pasaporte",
+        "operaciones/produccion-tiempos"
+      ]
+    },
+    {
+      "titulo": "HSE · Seguridad y salud",
+      "periodo": "D2",
+      "pantallas_catalogo": [
+        "operaciones/analisis-riesgo-ats",
+        "operaciones/epp-certificaciones",
+        "operaciones/hse-dashboard",
+        "operaciones/permisos-trabajo",
+        "operaciones/protocolo-loto",
+        "operaciones/registro-incidentes"
+      ]
+    },
+    {
+      "titulo": "SUNAT · Facturación electrónica (fase 1)",
+      "periodo": "D2",
+      "actividades": [
+        {
+          "id": "E3-M02",
+          "texto": "Integración con el proveedor de facturación electrónica (OSE/PSE): emisión de facturas y boletas en XML UBL 2.1 con firma digital",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D2"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M03",
+          "texto": "Recepción y archivo de la constancia de SUNAT (CDR) y estado de cada comprobante en Facturación",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D2"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M04",
+          "texto": "Pruebas de emisión en el ambiente de pruebas de SUNAT",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D2"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M05",
+          "texto": "DIFESMAQ entrega certificado digital, usuario SOL secundario y credenciales del proveedor OSE/PSE (necesario para el pase a producción)",
+          "tipo": "CLIENTE",
+          "periodos": [
+            "D2"
+          ],
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "titulo": "Hito D2",
+      "periodo": "D2",
+      "actividades": [
+        {
+          "id": "E3-M06",
+          "texto": "HITO: Núcleo de Producción, HSE y facturación electrónica en pruebas",
+          "tipo": "HITO",
+          "periodos": [
+            "D2"
+          ],
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "titulo": "Producción · áreas productivas",
+      "periodo": "D3",
+      "pantallas_catalogo": [
+        "operaciones/area-fabricacion",
+        "operaciones/area-ingenieria",
+        "operaciones/area-maestranza",
+        "operaciones/area-soldadura",
+        "operaciones/fab-ensamble",
+        "operaciones/fab-estructuras",
+        "operaciones/fab-piezas",
+        "operaciones/fab-pruebas",
+        "operaciones/ing-planos",
+        "operaciones/ing-tiempos",
+        "operaciones/mae-cromado",
+        "operaciones/mae-fresado",
+        "operaciones/mae-rectificado",
+        "operaciones/mae-recuperacion",
+        "operaciones/mae-taladrado",
+        "operaciones/mae-torneado",
+        "operaciones/maestranza-bom",
+        "operaciones/sol-corte",
+        "operaciones/sol-estructural",
+        "operaciones/sol-mig-tig",
+        "operaciones/sol-recargue"
+      ]
+    },
+    {
+      "titulo": "Venta de Repuestos",
+      "periodo": "D3",
+      "pantallas_catalogo": [
+        "operaciones/catalogo-precios",
+        "operaciones/dashboard-repuestos",
+        "operaciones/despachos-repuestos",
+        "operaciones/pedidos-venta",
+        "operaciones/repuestos-cotizaciones",
+        "operaciones/repuestos-crear-pedido",
+        "operaciones/repuestos-detalle-pedido",
+        "operaciones/repuestos-ordenes"
+      ]
+    },
+    {
+      "titulo": "Transporte, Flota y Finanzas operativas",
+      "periodo": "D3",
+      "pantallas_catalogo": [
+        "operaciones/dashboard-transporte",
+        "operaciones/transporte-liquidacion",
+        "operaciones/dashboard-rental",
+        "operaciones/monitoreo-equipos",
+        "operaciones/consolidado",
+        "operaciones/ots-costos"
+      ]
+    },
+    {
+      "titulo": "Compras e importación",
+      "periodo": "D3",
+      "pantallas_catalogo": [
+        "operaciones/compras-importaciones",
+        "operaciones/proveedores"
+      ]
+    },
+    {
+      "titulo": "SUNAT · Facturación electrónica (fase 2)",
+      "periodo": "D3",
+      "actividades": [
+        {
+          "id": "E3-M07",
+          "texto": "Notas de Crédito y Débito electrónicas",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D3"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M08",
+          "texto": "Guía de Remisión electrónica",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D3"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M09",
+          "texto": "Comunicación de baja y resumen diario de boletas",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D3"
+          ],
+          "estado": "pendiente"
+        },
+        {
+          "id": "E3-M10",
+          "texto": "Pase a producción con el certificado digital de DIFESMAQ y primera factura real emitida",
+          "tipo": "SUNAT",
+          "periodos": [
+            "D3"
+          ],
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "titulo": "Hito D3",
+      "periodo": "D3",
+      "actividades": [
+        {
+          "id": "E3-M11",
+          "texto": "HITO: Desarrollo completo · 210 pantallas operativas · Facturación electrónica SUNAT en producción (27 nov)",
+          "tipo": "HITO",
+          "periodos": [
+            "D3"
+          ],
+          "estado": "pendiente"
+        }
+      ]
+    }
+  ]
+}
