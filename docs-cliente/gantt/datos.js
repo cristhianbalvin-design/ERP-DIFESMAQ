@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-13T00:25:54.508Z",
+  "generado": "2026-11-13T18:36:56.093Z",
   "catalogo": {
-    "fuente": "git show origin/main:catalogo/pantallas.json",
-    "commit": "ec0ae2f6",
+    "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
+    "commit": null,
     "total": 210,
-    "operativas": 142,
-    "por_desarrollar": 68,
+    "operativas": 143,
+    "por_desarrollar": 67,
     "modulos": [
       {
         "app": "admin",
@@ -193,8 +193,8 @@ window.GANTT_DATOS = {
         "app": "operaciones",
         "modulo": "Transporte Comercial",
         "total": 10,
-        "operativas": 8,
-        "por_desarrollar": 2
+        "operativas": 9,
+        "por_desarrollar": 1
       },
       {
         "app": "operaciones",
@@ -2900,12 +2900,12 @@ window.GANTT_DATOS = {
             },
             {
               "id": "operaciones/transporte-liquidacion",
-              "texto": "Liquidación de transporte — conectar a datos reales",
+              "texto": "Liquidación de transporte",
               "tipo": "OP",
               "periodos": [
                 "D3"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/transporte-liquidacion"
             },
             {
