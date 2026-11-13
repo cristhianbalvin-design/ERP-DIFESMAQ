@@ -922,3 +922,8 @@ main {
   }
 
 }
+
+.badge.por-registrar {
+  background: #fff0c2;
+  color: #795000;
+}
