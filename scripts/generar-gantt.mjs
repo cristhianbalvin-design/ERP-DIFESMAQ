@@ -22,6 +22,11 @@ export function construirDatos({ etapas, capacitacion, fuente_en_vivo, catalogo,
   };
 }
 
+export function mismoContenido(a, b) {
+  const contenido = ({ generado, catalogo: { fuente, commit, ...catalogo }, ...resto }) => ({ catalogo, ...resto });
+  return JSON.stringify(contenido(a)) === JSON.stringify(contenido(b));
+}
+
 async function main() {
 try {
   const erp = resolve(root, option('--erp') || process.env.GANTT_ERP_DIR || '../ERP - TIDEO');
@@ -74,11 +79,10 @@ try {
       const raw = readFileSync(destino, 'utf8');
       anterior = JSON.parse(raw.replace(/^window\.GANTT_DATOS = /, '').replace(/;\s*$/, ''));
     } catch { throw new Error('No se pudo leer datos.js para verificarlo.'); }
-    anterior.generado = datos.generado;
-    if (serializar(anterior) !== serializar(datos)) {
+    if (!mismoContenido(anterior, datos)) {
       console.error('datos.js no coincide con los datos generados.');
       process.exitCode = 2;
-    } else console.log('Verificación correcta: datos.js coincide (se ignora la fecha de generación).');
+    } else console.log('Verificación correcta: datos.js coincide (se ignoran fecha, fuente y commit).');
   } else {
     writeFileSync(destino, serializar(datos), 'utf8');
     console.log('Generado: docs-cliente/gantt/datos.js');

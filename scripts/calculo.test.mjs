@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { construirDatos } from './generar-gantt.mjs';
+import { construirDatos, mismoContenido } from './generar-gantt.mjs';
 
 const { calcular } = createRequire(import.meta.url)('../docs-cliente/gantt/calculo.js');
 const pantalla = (clave, estado, app = 'operaciones') => ({ clave, estado, app, modulo: 'Módulo', titulo: clave });
@@ -47,4 +47,15 @@ test('el generador utiliza el mismo cálculo para los mismos datos', () => {
   assert.deepEqual(datos.etapas[2], esperado.etapa);
   const { fuente, commit, ...resumen } = datos.catalogo;
   assert.deepEqual(resumen, esperado.catalogo);
+});
+
+test('la comparación ignora metadatos y detecta cambios de estado', () => {
+  const etapa = { titulo: 'Etapa', secciones: [{ actividades: [] }] };
+  const base = { etapas: [etapa, etapa, plan], capacitacion: {}, fuente_en_vivo: {}, catalogo };
+  const primero = construirDatos({ ...base, fuente: 'git', commit: 'abc', generado: '2026-01-01T00:00:00Z' });
+  const segundo = construirDatos({ ...base, fuente: 'url', commit: null, generado: '2026-02-01T00:00:00Z' });
+  const cambiado = { pantallas: catalogo.pantallas.map(p => p.clave === 'c' ? { ...p, estado: 'activa' } : p) };
+  const tercero = construirDatos({ ...base, catalogo: cambiado, fuente: 'url', commit: null, generado: segundo.generado });
+  assert.equal(mismoContenido(primero, segundo), true);
+  assert.equal(mismoContenido(primero, tercero), false);
 });
