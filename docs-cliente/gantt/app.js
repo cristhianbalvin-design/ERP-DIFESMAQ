@@ -1,6 +1,8 @@
 (() => {
     'use strict';
-    const data = window.GANTT_DATOS;
+    let data = window.GANTT_DATOS;
+    let origen = `Copia del ${new Intl.DateTimeFormat("es-PE").format(new Date(data.generado))}` +
+        " · sin conexión al catálogo";
     const $ = s => document.querySelector(s);
     const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const localDate = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -14,6 +16,7 @@
     const types = { ADM: ['ERP Administrativo', '#147995'], OP: ['ERP Operativo', '#4359a2'], FIX: ['Corrección' +
         ' técnica', '#6f568f'], AUDIT: ['Auditoría', '#527071'], SUNAT: ['Facturación electrónica', '#a24f67'], CLIENTE:
          ['DIFESMAQ', '#706634'], HITO: ['Hito', '#3b6e55'] };
+    function render() {
     const periods = data.etapas.flatMap(e => e.periodos);
     const all = data.etapas.flatMap(e => e.secciones.flatMap(s => s.actividades.map(a => ({ ...a, etapa: e.id, seccion: s.titulo }))));
     const displayedState = a => {
@@ -53,7 +56,7 @@
     <div class="progress"><span style="width:${pct(m.operativas, m.total)}%"></span></div></div>`;
     $('#desarrollo-contenido').innerHTML = `<div class="hero"><div><div class="eyebrow">Proyecto DIFESMAQ ·\
  TIDEO</div><h1 id="titulo-desarrollo">Desarrollo — OPERA</h1><p>${esc(range(data.etapas[0].inicio, cierre))} ·\
- Responsabilidad de TIDEO</p></div><p class="updated">Actualizado: ${esc(date(data.generado.slice(0, 10)))}</p></div>
+ Responsabilidad de TIDEO</p></div><p class="updated" id="origen-catalogo">${esc(origen)}</p></div>
     <div class="metrics">${metric('Avance del desarrollo', `${pct(done, valid.length)}%`, `${done} de ${valid.length}
          actividades`, pct(done, valid.length))}${metric('Pantallas operativas', `${cat.operativas} de ${cat.total}`,
          `${pct(cat.operativas, cat.total)}% del alcance`, pct(cat.operativas, cat.total))}${metric('Por desarrollar',
@@ -149,7 +152,7 @@
         $('.scroll-hint').hidden = wrap.scrollTop + wrap.clientHeight >= wrap.scrollHeight - 2;
     }
     $('.gantt-wrap').addEventListener('scroll', updateScrollHint);
-    window.addEventListener('resize', updateScrollHint);
+    window.onresize = updateScrollHint;
     $('#go-today').addEventListener('click', goToToday);
     ['#f-etapa', '#f-estado', '#f-tipo', '#f-buscar'].forEach(s => $(s).addEventListener('input', renderGantt));
     $('#gantt').addEventListener('click', event => {
@@ -193,11 +196,12 @@
     const sessionCard = s => {
         const waiting = s.requiere_desarrollo && all.some(a => a.etapa === 'etapa3' &&
          a.periodos.includes(s.requiere_desarrollo) && a.estado !== 'terminado');
+        const estado = s.fecha < today && ['programada', 'confirmada'].includes(s.estado) ? 'por-registrar' : s.estado;
+        const etiqueta = estado === 'por-registrar' ? 'Por registrar' : (cap.estados[estado] || estado);
         return `<article class="session"><div class="date-box"><strong>${esc(date(s.fecha, { day: 'numeric'
          }))}</strong><span>${esc(date(s.fecha, { month: 'short' }))}</span></div><div><div\
  class="session-meta"><span>${esc(s.dia)} · ${esc(s.area)}</span><span class="badge\
- ${esc(s.estado)}">${esc(cap.estados[s.estado] ||
-         s.estado)}</span></div><h3>${esc(s.titulo)}</h3><h4>Temas</h4><ul>${s.temas.map(t =>
+ ${esc(estado)}">${esc(etiqueta)}</span></div><h3>${esc(s.titulo)}</h3><h4>Temas</h4><ul>${s.temas.map(t =>
          `<li>${esc(t)}</li>`).join('')}</ul><h4>Preparación a cargo de DIFESMAQ</h4><ul\
  class="checks">${s.preparacion_cliente.map(t => `<li>${esc(t)}</li>`).join('')}</ul>${waiting ? `<p class="notice">⚠\
  Depende del desarrollo ${esc(s.requiere_desarrollo)}, que aún tiene actividades sin terminar.</p>` : ''}</div></article>`;
@@ -226,6 +230,41 @@
         <div class="panel responsibilities"><div><h3>TIDEO</h3>
         <p>Desarrollo de OPERA y acompañamiento en la capacitación.</p></div><div><h3>DIFESMAQ</h3>
         <p>Preparación de la información y disponibilidad de sus equipos.</p></div></div>`;
+    }
+    render();
+    const fuente = data.fuente_en_vivo;
+    const jsonEnVivo = async url => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), fuente.tiempo_maximo_ms);
+        try {
+            const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return await response.json();
+        } finally { clearTimeout(timer); }
+    };
+    let ultimoCambio = null;
+    let enVivo = false;
+    function actualizarOrigen() {
+        if (!enVivo) return;
+        origen = ultimoCambio ? `En vivo · catálogo actualizado el ${ultimoCambio}` : 'En vivo';
+        const indicador = $('#origen-catalogo');
+        if (indicador) indicador.textContent = origen;
+    }
+    jsonEnVivo(fuente.ultimo_cambio_url).then(commits => {
+        const fecha = commits?.[0]?.commit?.committer?.date;
+        if (!fecha || Number.isNaN(Date.parse(fecha))) throw new Error('Fecha de último cambio inválida');
+        ultimoCambio = new Intl.DateTimeFormat('es-PE', { dateStyle: 'medium', timeStyle: 'short' })
+            .format(new Date(fecha));
+        actualizarOrigen();
+    }).catch(error => console.warn('No se pudo obtener el último cambio del catálogo:', error));
+    jsonEnVivo(fuente.catalogo_url).then(catalogo => {
+        const resultado = window.GANTT_CALCULO.calcular(data.plan_etapa3, catalogo);
+        data = { ...data, catalogo: { ...data.catalogo, ...resultado.catalogo },
+            etapas: data.etapas.map(e => e.id === resultado.etapa.id ? resultado.etapa : e) };
+        enVivo = true;
+        actualizarOrigen();
+        render();
+    }).catch(error => console.warn('No se pudo actualizar el catálogo en vivo:', error));
     function route() { const view = location.hash === '#capacitacion' ? 'capacitacion' : 'desarrollo'; for (const id of
          ['desarrollo', 'capacitacion']) {
         document.getElementById(id).hidden = id !== view;

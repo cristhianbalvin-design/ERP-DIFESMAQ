@@ -1,0 +1,6 @@
+{
+  "descripcion": "La página lee en vivo el catálogo canónico de pantallas del ERP (repositorio público ERP---TIDEO, rama main). Si no puede leerlo, muestra la copia incluida en datos.js.",
+  "catalogo_url": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
+  "ultimo_cambio_url": "https://api.github.com/repos/cristhianbalvin-design/ERP---TIDEO/commits?path=catalogo/pantallas.json&per_page=1",
+  "tiempo_maximo_ms": 8000
+}

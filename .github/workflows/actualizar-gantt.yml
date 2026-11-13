@@ -1,0 +1,45 @@
+name: Actualizar Gantt
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs-cliente/gantt/datos/**'
+      - 'docs-cliente/gantt/calculo.js'
+      - 'scripts/**'
+permissions:
+  contents: write
+concurrency:
+  group: actualizar-gantt
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verificar y actualizar copia
+        shell: bash
+        run: |
+          url=$(node -p "require('./docs-cliente/gantt/datos/fuente-en-vivo.json').catalogo_url")
+          set +e
+          node scripts/generar-gantt.mjs --catalogo-url "$url" --verificar
+          resultado=$?
+          set -e
+          if [ "$resultado" -eq 2 ]; then
+            node scripts/generar-gantt.mjs --catalogo-url "$url"
+            git add docs-cliente/gantt/datos.js
+            if ! git diff --cached --quiet; then
+              git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+                commit -m 'chore(gantt): actualizar datos desde el catálogo del ERP'
+              git push origin HEAD:main
+            fi
+          elif [ "$resultado" -ne 0 ]; then
+            exit "$resultado"
+          fi
