@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-13T18:36:56.093Z",
+  "generado": "2026-11-14T17:13:40.834Z",
   "catalogo": {
     "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
     "commit": null,
     "total": 210,
-    "operativas": 143,
-    "por_desarrollar": 67,
+    "operativas": 147,
+    "por_desarrollar": 63,
     "modulos": [
       {
         "app": "admin",
@@ -130,8 +130,8 @@ window.GANTT_DATOS = {
         "app": "operaciones",
         "modulo": "Confiabilidad",
         "total": 5,
-        "operativas": 1,
-        "por_desarrollar": 4
+        "operativas": 5,
+        "por_desarrollar": 0
       },
       {
         "app": "operaciones",
@@ -2101,47 +2101,47 @@ window.GANTT_DATOS = {
           "actividades": [
             {
               "id": "operaciones/confiabilidad",
-              "texto": "KPIs de Confiabilidad — conectar a datos reales",
+              "texto": "KPIs de Confiabilidad",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/confiabilidad"
             },
             {
               "id": "operaciones/disponibilidad-mecanica",
-              "texto": "Disponibilidad Mecánica — conectar a datos reales",
+              "texto": "Disponibilidad Mecánica",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/disponibilidad-mecanica"
             },
             {
               "id": "operaciones/programacion-pm",
-              "texto": "Programación PM — conectar a datos reales",
+              "texto": "Programación PM",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/programacion-pm"
             },
             {
               "id": "operaciones/sos-telemetria",
-              "texto": "Análisis SOS — conectar a datos reales",
+              "texto": "Análisis SOS",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/sos-telemetria"
             },
             {
               "id": "operaciones/indicadores-confiabilidad",
-              "texto": "Indicadores de confiabilidad — construir la pantalla",
+              "texto": "Indicadores MTBF/MTTR — construir la pantalla",
               "tipo": "OP",
               "periodos": [
                 "D1"
