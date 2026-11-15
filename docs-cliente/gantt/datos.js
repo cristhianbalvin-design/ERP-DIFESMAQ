@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-15T17:53:06.662Z",
+  "generado": "2026-11-15T21:30:44.446Z",
   "catalogo": {
-    "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
-    "commit": null,
-    "total": 212,
+    "fuente": "git show origin/main:catalogo/pantallas.json",
+    "commit": "6b5c2f19",
+    "total": 211,
     "operativas": 151,
-    "por_desarrollar": 61,
+    "por_desarrollar": 60,
     "modulos": [
       {
         "app": "admin",
@@ -31,9 +31,9 @@ window.GANTT_DATOS = {
       {
         "app": "admin",
         "modulo": "Configuración",
-        "total": 9,
+        "total": 8,
         "operativas": 8,
-        "por_desarrollar": 1
+        "por_desarrollar": 0
       },
       {
         "app": "admin",
@@ -2198,8 +2198,7 @@ window.GANTT_DATOS = {
           "pantallas_catalogo": [
             "operaciones/clientes",
             "operaciones/equipos",
-            "operaciones/configuracion",
-            "admin/tarifarios"
+            "operaciones/configuracion"
           ],
           "actividades": [
             {
@@ -2231,16 +2230,6 @@ window.GANTT_DATOS = {
               ],
               "estado": "pendiente",
               "clave_catalogo": "operaciones/configuracion"
-            },
-            {
-              "id": "admin/tarifarios",
-              "texto": "Tarifarios — conectar a datos reales",
-              "tipo": "ADM",
-              "periodos": [
-                "D1"
-              ],
-              "estado": "pendiente",
-              "clave_catalogo": "admin/tarifarios"
             }
           ]
         },
@@ -3473,8 +3462,7 @@ window.GANTT_DATOS = {
         "pantallas_catalogo": [
           "operaciones/clientes",
           "operaciones/equipos",
-          "operaciones/configuracion",
-          "admin/tarifarios"
+          "operaciones/configuracion"
         ]
       },
       {

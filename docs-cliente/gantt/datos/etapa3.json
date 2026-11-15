@@ -55,8 +55,7 @@
       "pantallas_catalogo": [
         "operaciones/clientes",
         "operaciones/equipos",
-        "operaciones/configuracion",
-        "admin/tarifarios"
+        "operaciones/configuracion"
       ]
     },
     {
