@@ -200,15 +200,6 @@
           "estado": "terminado"
         },
         {
-          "id": "E1-017",
-          "texto": "Customer Success completo: Onboarding, Planes de Éxito, Health Score, Renovaciones, NPS",
-          "tipo": "ADM",
-          "periodos": [
-            "S1"
-          ],
-          "estado": "terminado"
-        },
-        {
           "id": "E1-018",
           "texto": "Inteligencia Artificial: IA Comercial, IA Operativa e IA Financiera con historial auditado",
           "tipo": "ADM",

@@ -1,5 +1,5 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-15T21:30:44.446Z",
+  "generado": "2026-11-15T21:45:18.602Z",
   "catalogo": {
     "fuente": "git show origin/main:catalogo/pantallas.json",
     "commit": "6b5c2f19",
@@ -402,15 +402,6 @@ window.GANTT_DATOS = {
             {
               "id": "E1-016",
               "texto": "BI Comercial, BI Operativo y BI Financiero completos",
-              "tipo": "ADM",
-              "periodos": [
-                "S1"
-              ],
-              "estado": "terminado"
-            },
-            {
-              "id": "E1-017",
-              "texto": "Customer Success completo: Onboarding, Planes de Éxito, Health Score, Renovaciones, NPS",
               "tipo": "ADM",
               "periodos": [
                 "S1"
