@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-14T17:13:40.834Z",
+  "generado": "2026-11-15T17:53:06.662Z",
   "catalogo": {
     "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
     "commit": null,
-    "total": 210,
-    "operativas": 147,
-    "por_desarrollar": 63,
+    "total": 212,
+    "operativas": 151,
+    "por_desarrollar": 61,
     "modulos": [
       {
         "app": "admin",
@@ -178,22 +178,22 @@ window.GANTT_DATOS = {
       {
         "app": "operaciones",
         "modulo": "Órdenes de Trabajo",
-        "total": 11,
-        "operativas": 10,
+        "total": 12,
+        "operativas": 11,
         "por_desarrollar": 1
       },
       {
         "app": "operaciones",
         "modulo": "Producción",
         "total": 37,
-        "operativas": 3,
-        "por_desarrollar": 34
+        "operativas": 5,
+        "por_desarrollar": 32
       },
       {
         "app": "operaciones",
         "modulo": "Transporte Comercial",
-        "total": 10,
-        "operativas": 9,
+        "total": 11,
+        "operativas": 10,
         "por_desarrollar": 1
       },
       {
@@ -2370,12 +2370,12 @@ window.GANTT_DATOS = {
             },
             {
               "id": "operaciones/produccion-garantias",
-              "texto": "Garantías de producción — conectar a datos reales",
+              "texto": "Garantías de producción",
               "tipo": "OP",
               "periodos": [
                 "D2"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/produccion-garantias"
             },
             {
@@ -2390,12 +2390,12 @@ window.GANTT_DATOS = {
             },
             {
               "id": "operaciones/produccion-pasaporte",
-              "texto": "Pasaporte de componente — conectar a datos reales",
+              "texto": "Pasaporte de componente",
               "tipo": "OP",
               "periodos": [
                 "D2"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/produccion-pasaporte"
             },
             {
