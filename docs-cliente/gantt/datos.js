@@ -1,10 +1,10 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-16T01:21:16.125Z",
+  "generado": "2026-11-16T21:07:38.491Z",
   "catalogo": {
-    "fuente": "git show origin/main:catalogo/pantallas.json",
-    "commit": "b6b3c67d",
-    "total": 202,
-    "operativas": 149,
+    "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
+    "commit": null,
+    "total": 204,
+    "operativas": 151,
     "por_desarrollar": 53,
     "modulos": [
       {
@@ -73,15 +73,15 @@ window.GANTT_DATOS = {
       {
         "app": "admin",
         "modulo": "Operaciones",
-        "total": 6,
-        "operativas": 6,
+        "total": 5,
+        "operativas": 5,
         "por_desarrollar": 0
       },
       {
         "app": "admin",
         "modulo": "Plataforma",
-        "total": 2,
-        "operativas": 2,
+        "total": 3,
+        "operativas": 3,
         "por_desarrollar": 0
       },
       {
@@ -89,6 +89,13 @@ window.GANTT_DATOS = {
         "modulo": "RRHH",
         "total": 14,
         "operativas": 14,
+        "por_desarrollar": 0
+      },
+      {
+        "app": "admin",
+        "modulo": "Soporte",
+        "total": 2,
+        "operativas": 2,
         "por_desarrollar": 0
       },
       {
