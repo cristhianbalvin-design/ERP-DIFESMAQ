@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-15T21:45:18.602Z",
+  "generado": "2026-11-16T01:21:16.125Z",
   "catalogo": {
     "fuente": "git show origin/main:catalogo/pantallas.json",
-    "commit": "6b5c2f19",
-    "total": 211,
-    "operativas": 151,
-    "por_desarrollar": 60,
+    "commit": "b6b3c67d",
+    "total": 202,
+    "operativas": 149,
+    "por_desarrollar": 53,
     "modulos": [
       {
         "app": "admin",
@@ -40,13 +40,6 @@ window.GANTT_DATOS = {
         "modulo": "CRM & Marketing",
         "total": 3,
         "operativas": 3,
-        "por_desarrollar": 0
-      },
-      {
-        "app": "admin",
-        "modulo": "Customer Success",
-        "total": 6,
-        "operativas": 6,
         "por_desarrollar": 0
       },
       {
@@ -116,8 +109,8 @@ window.GANTT_DATOS = {
         "app": "operaciones",
         "modulo": "Clientes & Activos",
         "total": 3,
-        "operativas": 1,
-        "por_desarrollar": 2
+        "operativas": 3,
+        "por_desarrollar": 0
       },
       {
         "app": "operaciones",
@@ -137,8 +130,8 @@ window.GANTT_DATOS = {
         "app": "operaciones",
         "modulo": "Configuración",
         "total": 2,
-        "operativas": 1,
-        "por_desarrollar": 1
+        "operativas": 2,
+        "por_desarrollar": 0
       },
       {
         "app": "operaciones",
@@ -164,23 +157,23 @@ window.GANTT_DATOS = {
       {
         "app": "operaciones",
         "modulo": "Inicio",
-        "total": 4,
+        "total": 3,
         "operativas": 3,
-        "por_desarrollar": 1
+        "por_desarrollar": 0
       },
       {
         "app": "operaciones",
         "modulo": "Operaciones",
-        "total": 3,
+        "total": 1,
         "operativas": 0,
-        "por_desarrollar": 3
+        "por_desarrollar": 1
       },
       {
         "app": "operaciones",
         "modulo": "Órdenes de Trabajo",
         "total": 12,
-        "operativas": 11,
-        "por_desarrollar": 1
+        "operativas": 12,
+        "por_desarrollar": 0
       },
       {
         "app": "operaciones",
@@ -2086,8 +2079,7 @@ window.GANTT_DATOS = {
             "operaciones/confiabilidad",
             "operaciones/disponibilidad-mecanica",
             "operaciones/programacion-pm",
-            "operaciones/sos-telemetria",
-            "operaciones/indicadores-confiabilidad"
+            "operaciones/sos-telemetria"
           ],
           "actividades": [
             {
@@ -2129,16 +2121,6 @@ window.GANTT_DATOS = {
               ],
               "estado": "terminado",
               "clave_catalogo": "operaciones/sos-telemetria"
-            },
-            {
-              "id": "operaciones/indicadores-confiabilidad",
-              "texto": "Indicadores MTBF/MTTR — construir la pantalla",
-              "tipo": "OP",
-              "periodos": [
-                "D1"
-              ],
-              "estado": "pendiente",
-              "clave_catalogo": "operaciones/indicadores-confiabilidad"
             }
           ]
         },
@@ -2146,40 +2128,18 @@ window.GANTT_DATOS = {
           "titulo": "Órdenes de Trabajo y campo",
           "periodo": "D1",
           "pantallas_catalogo": [
-            "operaciones/ot-detalle",
-            "operaciones/docs",
-            "operaciones/mapa-campo"
+            "operaciones/ot-detalle"
           ],
           "actividades": [
             {
               "id": "operaciones/ot-detalle",
-              "texto": "Detalle de OT — conectar a datos reales",
+              "texto": "Detalle de OT",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/ot-detalle"
-            },
-            {
-              "id": "operaciones/docs",
-              "texto": "Documentos — conectar a datos reales",
-              "tipo": "OP",
-              "periodos": [
-                "D1"
-              ],
-              "estado": "pendiente",
-              "clave_catalogo": "operaciones/docs"
-            },
-            {
-              "id": "operaciones/mapa-campo",
-              "texto": "Mapa de Campo — conectar a datos reales",
-              "tipo": "OP",
-              "periodos": [
-                "D1"
-              ],
-              "estado": "pendiente",
-              "clave_catalogo": "operaciones/mapa-campo"
             }
           ]
         },
@@ -2194,32 +2154,32 @@ window.GANTT_DATOS = {
           "actividades": [
             {
               "id": "operaciones/clientes",
-              "texto": "Clientes & Contratos — conectar a datos reales",
+              "texto": "Clientes & Contratos",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/clientes"
             },
             {
               "id": "operaciones/equipos",
-              "texto": "Equipos & Activos — conectar a datos reales",
+              "texto": "Equipos & Activos",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/equipos"
             },
             {
               "id": "operaciones/configuracion",
-              "texto": "Parámetros Globales — conectar a datos reales",
+              "texto": "Parámetros Globales",
               "tipo": "OP",
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/configuracion"
             }
           ]
@@ -2235,7 +2195,7 @@ window.GANTT_DATOS = {
               "periodos": [
                 "D1"
               ],
-              "estado": "pendiente"
+              "estado": "terminado"
             }
           ]
         },
@@ -3434,17 +3394,14 @@ window.GANTT_DATOS = {
           "operaciones/confiabilidad",
           "operaciones/disponibilidad-mecanica",
           "operaciones/programacion-pm",
-          "operaciones/sos-telemetria",
-          "operaciones/indicadores-confiabilidad"
+          "operaciones/sos-telemetria"
         ]
       },
       {
         "titulo": "Órdenes de Trabajo y campo",
         "periodo": "D1",
         "pantallas_catalogo": [
-          "operaciones/ot-detalle",
-          "operaciones/docs",
-          "operaciones/mapa-campo"
+          "operaciones/ot-detalle"
         ]
       },
       {
