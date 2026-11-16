@@ -36,17 +36,14 @@
         "operaciones/confiabilidad",
         "operaciones/disponibilidad-mecanica",
         "operaciones/programacion-pm",
-        "operaciones/sos-telemetria",
-        "operaciones/indicadores-confiabilidad"
+        "operaciones/sos-telemetria"
       ]
     },
     {
       "titulo": "Órdenes de Trabajo y campo",
       "periodo": "D1",
       "pantallas_catalogo": [
-        "operaciones/ot-detalle",
-        "operaciones/docs",
-        "operaciones/mapa-campo"
+        "operaciones/ot-detalle"
       ]
     },
     {
