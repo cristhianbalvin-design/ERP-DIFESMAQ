@@ -1,11 +1,11 @@
 window.GANTT_DATOS = {
-  "generado": "2026-11-16T21:07:38.491Z",
+  "generado": "2026-11-17T19:56:19.532Z",
   "catalogo": {
     "fuente": "https://raw.githubusercontent.com/cristhianbalvin-design/ERP---TIDEO/main/catalogo/pantallas.json",
     "commit": null,
     "total": 204,
-    "operativas": 151,
-    "por_desarrollar": 53,
+    "operativas": 152,
+    "por_desarrollar": 52,
     "modulos": [
       {
         "app": "admin",
@@ -108,8 +108,8 @@ window.GANTT_DATOS = {
       {
         "app": "operaciones",
         "modulo": "Almacén & Repuestos",
-        "total": 16,
-        "operativas": 16,
+        "total": 17,
+        "operativas": 17,
         "por_desarrollar": 0
       },
       {
@@ -122,8 +122,8 @@ window.GANTT_DATOS = {
       {
         "app": "operaciones",
         "modulo": "Compras & Importación",
-        "total": 5,
-        "operativas": 4,
+        "total": 4,
+        "operativas": 3,
         "por_desarrollar": 1
       },
       {
@@ -144,8 +144,8 @@ window.GANTT_DATOS = {
         "app": "operaciones",
         "modulo": "Finanzas & Facturación",
         "total": 5,
-        "operativas": 3,
-        "por_desarrollar": 2
+        "operativas": 4,
+        "por_desarrollar": 1
       },
       {
         "app": "operaciones",
@@ -2887,12 +2887,12 @@ window.GANTT_DATOS = {
             },
             {
               "id": "operaciones/ots-costos",
-              "texto": "Costos & Rentabilidad — conectar a datos reales",
+              "texto": "Costos & Rentabilidad",
               "tipo": "OP",
               "periodos": [
                 "D3"
               ],
-              "estado": "pendiente",
+              "estado": "terminado",
               "clave_catalogo": "operaciones/ots-costos"
             }
           ]
